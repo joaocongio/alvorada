@@ -4,7 +4,7 @@
       <source src="@/assets/video/alvorada.mp4" type="video/mp4" />
       Your browser does not support the video tag.
     </video> -->
-    VIDEO
+    VIDEOO
   </section>
 </template>
 

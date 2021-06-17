@@ -1,0 +1,26 @@
+{
+  "About": {
+    "description": "Auto imported from components/About.vue"
+  },
+  "Barbers": {
+    "description": "Auto imported from components/Barbers.vue"
+  },
+  "Contact": {
+    "description": "Auto imported from components/Contact.vue"
+  },
+  "Footer": {
+    "description": "Auto imported from components/Footer.vue"
+  },
+  "Gallery": {
+    "description": "Auto imported from components/Gallery.vue"
+  },
+  "Header": {
+    "description": "Auto imported from components/Header.vue"
+  },
+  "Services": {
+    "description": "Auto imported from components/Services.vue"
+  },
+  "Video": {
+    "description": "Auto imported from components/Video.vue"
+  }
+}

@@ -50,7 +50,12 @@
         </ul>
 
         <div class="schedule">
-          <a href="https://api.whatsapp.com/send/?phone=5518998076397&text&app_absent=0" target="_blank" rel="noopener">AGENDAR HORÁRIO</a>
+          <a
+            href="https://api.whatsapp.com/send/?phone=5518998076397&text&app_absent=0"
+            target="_blank"
+            rel="noopener"
+            >AGENDAR HORÁRIO</a
+          >
         </div>
       </div>
     </nav>
@@ -61,7 +66,7 @@
 export default {
   data() {
     return {
-      isActive: false,
+      isActive: false
     };
   },
   methods: {
@@ -74,7 +79,7 @@ export default {
     menu() {
       const menuItems = document.querySelectorAll(".nav__item");
 
-      menuItems.forEach((item) =>
+      menuItems.forEach(item =>
         item.addEventListener("click", scrollToIdOnClick)
       );
 
@@ -85,22 +90,21 @@ export default {
         scrollToPosition(toSection);
       }
 
-      const getScrollTopByHref = (element) => {
+      const getScrollTopByHref = element => {
         const id = element.getAttribute("href");
         return document.querySelector(id).offsetTop;
       };
 
-      const scrollToPosition = (toSection) => {
+      const scrollToPosition = toSection => {
         window.scroll({
           top: toSection - 85,
-          behavior: "smooth",
+          behavior: "smooth"
         });
       };
-    },
-  },
+    }
+  }
 };
 </script>
-
 
 <style lang="scss" scoped>
 .header {
@@ -116,7 +120,7 @@ export default {
     align-items: center;
     max-width: 95%;
     margin: 0 auto;
-    height: 80px;
+    height: 100px;
 
     @media (min-width: 800px) {
       max-width: 75%;
@@ -192,7 +196,8 @@ export default {
         &__link {
           text-decoration: none;
           color: var(--white);
-          font-size: 1.1rem;
+          font: 700 1.1rem "Mate SC", serif;
+          letter-spacing: 2.3px;
           transition: 0.3s;
 
           &:hover {
@@ -210,12 +215,14 @@ export default {
           background: var(--secondary);
           padding: 10px;
           border-radius: 10px;
-          color: var(--black-500);
+          color: var(--white);
           text-decoration: none;
           box-shadow: 5px 5px 10px var(--black-500);
+          font: 700 1rem "Mate SC", serif;
+          letter-spacing: 1.3px;
 
           &:hover {
-            background: #df9a4c;
+            background: #03643f;
           }
         }
 

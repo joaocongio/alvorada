@@ -88,13 +88,21 @@
 
       <div class="texts">
         <p>
-          R. Antônio Luciano Gomes, 141 - Jardim Canada, Assis - SP, 19801-000
+          Rua Dom José Lázaro Neves, 30 - Centro, Assis - SP, 19814-390
         </p>
         <p>Copyright © 2021. Todos os direitos reservados</p>
       </div>
 
       <div class="created">
-        <p>Feito por <a href="">João Goularte</a></p>
+        <p>
+          Feito por
+          <a
+            href="https://www.instagram.com/joaocgoularte/"
+            target="_blank"
+            rel="noopener"
+            >João Goularte</a
+          >
+        </p>
       </div>
 
       <div class="whatsapp">
@@ -128,9 +136,9 @@
 export default {
   data() {
     return {
-      closeWhats: true,
+      closeWhats: true
     };
-  },
+  }
 };
 </script>
 
@@ -169,6 +177,7 @@ export default {
         line-height: 1.6;
         padding: 5px 0;
         text-align: center;
+        font-family: "Montserrat", sans-serif;
       }
     }
 
@@ -176,9 +185,11 @@ export default {
       padding-top: 20px;
       p {
         color: var(--white);
+        font-family: "Montserrat", sans-serif;
 
         a {
           font-weight: 700;
+          font-family: "Montserrat", sans-serif;
           text-decoration: none;
           color: var(--white);
         }
@@ -194,15 +205,16 @@ export default {
 
       a {
         img {
-          width: 80px;
+          width: 50px;
         }
       }
 
       .agendar {
         background: #16ca5b;
         color: var(--white);
-        font-size: 1.1rem;
-        padding: 20px;
+        font: 700 1rem "Mate SC", serif;
+        letter-spacing: 2px;
+        padding: 10px;
         border-radius: 10px;
         text-decoration: none;
         margin-right: 15px;

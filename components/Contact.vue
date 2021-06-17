@@ -92,12 +92,11 @@
           </div>
           <div class="item__description">
             <a
-              href="https://www.google.com.br/maps/place/Barbearia+Alvorada/@-22.6709173,-50.4138153,19.25z/data=!4m5!3m4!1s0x9495399437bed16d:0xfda7c1fca7871ef4!8m2!3d-22.6709461!4d-50.4133488"
+              href="https://www.google.com/maps/place/R.+Dom+Jos%C3%A9+L%C3%A1zaro+Neves,+30+-+Centro,+Assis+-+SP,+19814-390/@-22.661097,-50.410369,20.25z/data=!4m5!3m4!1s0x94953998a6ff55d3:0x907546c97079f201!8m2!3d-22.6611807!4d-50.4101829"
               target="_blank"
               rel="noopener"
             >
-              R. Antônio Luciano Gomes, 141 - Jardim Canada, Assis - SP,
-              19801-000
+              Rua Dom José Lázaro Neves, 30 - Centro, Assis - SP, 19814-390
             </a>
           </div>
         </div>
@@ -130,12 +129,13 @@
 
     .title {
       text-align: center;
-      color: var(--secondary);
-      font-size: 2rem;
+      color: var(--black-200);
+      font: 700 2rem "Mate SC", serif;
+      letter-spacing: 3px;
       margin-bottom: 50px;
 
       @media (min-width: 800px) {
-        font-size: 4rem;
+        font: 700 4rem "Mate SC", serif;
       }
     }
 
@@ -156,7 +156,7 @@
         }
 
         &__title {
-          color: var(--secondary);
+          color: var(--primary);
           font-size: 1.2rem;
           text-align: center;
         }
@@ -168,12 +168,16 @@
           a {
             color: var(--primary);
             line-height: 1.6;
+            font-family: "Montserrat", sans-serif;
           }
 
           p {
             padding: 5px 0;
+            color: var(--black-200);
+            font-family: "Montserrat", sans-serif;
             strong {
-              color: var(--primary);
+              color: var(--black-500);
+              font-family: "Montserrat", sans-serif;
             }
           }
           svg {

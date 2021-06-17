@@ -78,11 +78,11 @@ export default {
         });
       }
 
-      close.addEventListener("click", function () {
+      close.addEventListener("click", function() {
         modal.style.display = "none";
       });
-    },
-  },
+    }
+  }
 };
 </script>
 
@@ -103,11 +103,12 @@ export default {
 
     .title {
       text-align: center;
-      font-size: 2rem;
-      color: var(--secondary);
+      font: 700 2rem "Mate SC", serif;
+      letter-spacing: 3px;
+      color: var(--black-200);
 
       @media (min-width: 800px) {
-        font-size: 4rem;
+        font: 700 4rem "Mate SC", serif;
       }
     }
 
@@ -119,12 +120,12 @@ export default {
       justify-content: center;
 
       &__item {
-        width: 47%;
-        margin: 5px;
+        width: 48%;
+        margin: 0 5px 3px 0;
         cursor: pointer;
 
         @media (min-width: 800px) {
-          width: 31%;
+          width: 32%;
         }
 
         img {
@@ -144,7 +145,7 @@ export default {
       display: none;
       position: fixed;
       z-index: 1;
-      padding-top: 100px;
+      padding-top: 150px;
       left: 0;
       top: 0;
       width: 100%;
@@ -155,7 +156,7 @@ export default {
 
     .close {
       position: absolute;
-      top: 80px;
+      top: 100px;
       right: 35px;
       color: #f1f1f1;
       font-size: 40px;

@@ -47,7 +47,7 @@
 
 <style lang="scss" scoped>
 .barbers {
-  background: var(--secondary);
+  background: var(--primary);
   margin-top: 80px;
 
   .container {
@@ -63,17 +63,19 @@
     .title {
       h1 {
         color: var(--white);
-        font-size: 2rem;
+        font: 700 2rem "Mate SC", serif;
+        letter-spacing: 3px;
         padding-bottom: 10px;
 
         @media (min-width: 800px) {
-          font-size: 4rem;
+          font: 700 4rem "Mate SC", serif;
         }
       }
 
       p {
-        color: var(--gray-500);
+        color: rgb(235, 235, 235);
         line-height: 1.6;
+        font-family: "Montserrat", sans-serif;
       }
     }
 
@@ -83,7 +85,8 @@
       flex-wrap: wrap;
 
       &__item {
-        background-color: #dfdfdf;
+        background-color: var(--white);
+        border-radius: 5px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -91,7 +94,6 @@
         margin: 30px;
         width: 100%;
         padding: 30px 10px;
-        box-shadow: 5px 10px 8px var(--primary);
 
         @media (min-width: 500px) {
           width: 30%;
@@ -106,10 +108,17 @@
         .name {
           font-weight: 700;
           padding: 15px 0 20px 0;
+          font-family: "Montserrat", sans-serif;
 
           span {
             font-weight: 500;
+            font-family: "Montserrat", sans-serif;
           }
+        }
+
+        .text {
+          font-family: "Montserrat", sans-serif;
+          color: var(--black-200);
         }
       }
     }

@@ -2,12 +2,7 @@
   <section class="about" id="quemSomos">
     <div class="container">
       <div class="image">
-        <img
-          src="@/assets/img/image-quem-somos.png"
-          alt="Quem somos"
-          class="image__one"
-        />
-        <img src="@/assets/img/image-quem-somos.png" alt="Quem somos" />
+        <img src="@/assets/img/image-quem-somos2.png" alt="Quem somos" />
       </div>
       <div class="description">
         <h1 class="title">QUEM SOMOS</h1>
@@ -31,66 +26,86 @@
 
 <style lang="scss" scoped>
 .about {
-  margin-top: 80px;
+  margin-top: 60px;
+
+  @media (min-width: 769px) {
+    margin-top: 80px;
+  }
 
   .container {
     max-width: 95%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column-reverse;
+
+    @media (min-width: 500px) and (max-width: 799px) {
+      flex-direction: row;
+    }
 
     @media (min-width: 800px) {
       max-width: 75%;
-      display: flex;
+      flex-direction: row;
       align-items: flex-start;
     }
 
     .image {
-      display: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 40px;
 
-      @media (min-width: 800px) {
-        display: flex;
+      @media (min-width: 500px) {
         flex-direction: column;
+        justify-content: initial;
+        align-items: initial;
         flex: 1;
         margin-right: 30px;
+        padding-top: 0;
       }
       img {
         max-width: 100%;
         height: auto;
-      }
-
-      &__one {
-        margin-bottom: -5px;
       }
     }
 
     .description {
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
 
-      @media (min-width: 800px) {
+      @media (min-width: 500px) {
         flex: 1;
         justify-content: flex-start;
         align-items: flex-start;
       }
 
       .title {
-        font-size: 2rem;
-        color: var(--secondary);
+        font: 700 2rem "Mate SC", serif;
+        letter-spacing: 3px;
+        color: var(--black-200);
+        text-align: center;
+        padding-bottom: 40px;
 
         @media (min-width: 800px) {
-          font-size: 4rem;
+          font: 700 4rem "Mate SC", serif;
+          text-align: left;
+          padding-bottom: 0;
         }
       }
 
-      img {
+      .img {
         padding: 40px 0;
+        display: none;
+
+        @media (min-width: 769px) {
+          display: block;
+        }
       }
 
       .text {
-        font-size: 1rem;
+        font: 500 1rem "Montserrat", sans-serif;
         padding: 10px 0;
         line-height: 1.6;
+        color: var(--black-200);
       }
     }
   }

@@ -24,27 +24,27 @@ export default {
       cortes: [
         {
           descricao: "CORTE MASCULINO",
-          valor: "R$ 35,00",
+          valor: "R$ 35,00"
         },
         {
           descricao: "CORTE MASCULINO + BARBA",
-          valor: "R$ 60,00",
+          valor: "R$ 60,00"
         },
         {
           descricao: "BARBA",
-          valor: "R$ 35,00",
+          valor: "R$ 35,00"
         },
         {
           descricao: "CORTE INFANTIL",
-          valor: "R$ 25,00",
+          valor: "R$ 25,00"
         },
         {
           descricao: "OUTROS CORTES",
-          valor: "R$ 35,00",
-        },
-      ],
+          valor: "R$ 35,00"
+        }
+      ]
     };
-  },
+  }
 };
 </script>
 
@@ -55,20 +55,15 @@ export default {
   .imageBG {
     &::after {
       content: "";
-      background: url("@/assets/img/servicos.png") no-repeat;
+      background: url("@/assets/img/servicos.jpg") no-repeat;
       background-size: cover;
       background-attachment: fixed;
       position: absolute;
       z-index: -999;
       width: 100%;
-      height: 100%;
-
-      @media (min-width: 800px) {
-        height: 120%;
-      }
+      height: 110%;
     }
   }
-
 
   .container {
     max-width: 95%;
@@ -83,10 +78,11 @@ export default {
       h2 {
         color: var(--white);
         text-align: center;
-        font-size: 2rem;
+        font: 700 2rem "Mate SC", serif;
+        letter-spacing: 3px;
 
         @media (min-width: 800px) {
-          font-size: 4rem;
+          font: 700 4rem "Mate SC", serif;
         }
       }
 
@@ -111,10 +107,10 @@ export default {
 
         p {
           color: var(--white);
+          font-weight: 800;
 
           @media (min-width: 800px) {
             font-size: 1.7rem;
-            font-weight: 800;
           }
 
           &:nth-child(2) {

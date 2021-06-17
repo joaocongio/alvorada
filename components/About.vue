@@ -3,7 +3,7 @@
     <div class="container">
       <div class="image">
         <img
-          src="@/assets/img/image-quem-somos2.png"
+          src="@/assets/img/image-quem-somos.png"
           alt="Quem somos"
           class="image__one"
         />

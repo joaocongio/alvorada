@@ -1,6 +1,7 @@
 <template>
   <section class="about" id="quemSomos">
     <div class="container">
+      <h1 class="title-mobile">QUEM SOMOS</h1>
       <div class="image">
         <img src="@/assets/img/image-quem-somos2.png" alt="Quem somos" />
       </div>
@@ -33,10 +34,10 @@
   }
 
   .container {
-    max-width: 95%;
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
 
     @media (min-width: 500px) and (max-width: 799px) {
       flex-direction: row;
@@ -48,11 +49,29 @@
       align-items: flex-start;
     }
 
+    .title-mobile {
+      display: block;
+      font: 700 2rem "Mate SC", serif;
+      letter-spacing: 3px;
+      color: var(--secondary);
+      padding-bottom: 40px;
+      text-align: left;
+      padding-left: 10px;
+
+      @media (min-width: 500px) {
+        display: none;
+        font: 700 5.3rem "Mate SC", serif;
+        text-align: left;
+        padding-bottom: 0;
+        text-align: center;
+      }
+    }
+
     .image {
       display: flex;
       justify-content: center;
       align-items: center;
-      padding-top: 40px;
+      padding-bottom: 40px;
 
       @media (min-width: 500px) {
         flex-direction: column;
@@ -63,14 +82,15 @@
         padding-top: 0;
       }
       img {
+        width: 100%;
         max-width: 100%;
-        height: auto;
       }
     }
 
     .description {
       display: flex;
       flex-direction: column;
+      padding-left: 10px;
 
       @media (min-width: 500px) {
         flex: 1;
@@ -84,8 +104,10 @@
         color: var(--secondary);
         padding-bottom: 40px;
         text-align: left;
+        display: none;
 
         @media (min-width: 800px) {
+          display: block;
           font: 700 5.3rem "Mate SC", serif;
           text-align: left;
           padding-bottom: 0;

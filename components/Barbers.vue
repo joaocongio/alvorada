@@ -50,7 +50,7 @@
         padding-bottom: 10px;
 
         @media (min-width: 800px) {
-          font: 700 5.3rem "Mate SC", serif;
+          font: 700 5rem "Mate SC", serif;
         }
       }
 

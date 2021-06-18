@@ -55,15 +55,13 @@
       letter-spacing: 3px;
       color: var(--secondary);
       padding-bottom: 40px;
-      text-align: left;
       padding-left: 10px;
+        text-align: left;
 
       @media (min-width: 500px) {
         display: none;
-        font: 700 5.3rem "Mate SC", serif;
-        text-align: left;
+        font: 700 5rem "Mate SC", serif;
         padding-bottom: 0;
-        text-align: center;
       }
     }
 
@@ -103,15 +101,15 @@
         letter-spacing: 3px;
         color: var(--secondary);
         padding-bottom: 40px;
-        text-align: left;
+        text-align: center;
         display: none;
 
         @media (min-width: 800px) {
           display: block;
-          font: 700 5.3rem "Mate SC", serif;
+          font: 700 5rem "Mate SC", serif;
           text-align: left;
           padding-bottom: 0;
-          text-align: center;
+          text-align: left;
         }
       }
 

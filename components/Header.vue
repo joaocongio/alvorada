@@ -109,7 +109,7 @@ export default {
 <style lang="scss" scoped>
 .header {
   background: var(--primary);
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
   z-index: 99999999;
@@ -222,7 +222,7 @@ export default {
           letter-spacing: 1.3px;
 
           &:hover {
-            background: #03643f;
+            background: #07b9f0;
           }
         }
 

@@ -129,13 +129,13 @@
 
     .title {
       text-align: center;
-      color: var(--black-200);
+      color: var(--secondary);
       font: 700 2rem "Mate SC", serif;
       letter-spacing: 3px;
       margin-bottom: 50px;
 
       @media (min-width: 800px) {
-        font: 700 4rem "Mate SC", serif;
+        font: 700 5.3rem "Mate SC", serif;
       }
     }
 
@@ -156,7 +156,7 @@
         }
 
         &__title {
-          color: var(--primary);
+          color: var(--secondary);
           font-size: 1.2rem;
           text-align: center;
         }

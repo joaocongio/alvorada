@@ -81,14 +81,15 @@
       .title {
         font: 700 2rem "Mate SC", serif;
         letter-spacing: 3px;
-        color: var(--black-200);
-        text-align: center;
+        color: var(--secondary);
         padding-bottom: 40px;
+        text-align: left;
 
         @media (min-width: 800px) {
-          font: 700 4rem "Mate SC", serif;
+          font: 700 5.3rem "Mate SC", serif;
           text-align: left;
           padding-bottom: 0;
+          text-align: center;
         }
       }
 

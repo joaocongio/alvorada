@@ -82,18 +82,24 @@ export default {
         letter-spacing: 3px;
 
         @media (min-width: 800px) {
-          font: 700 4rem "Mate SC", serif;
+          font: 700 5.3rem "Mate SC", serif;
         }
       }
 
       .bg {
         background: var(--gray-800);
-        width: 270px;
-        height: 40px;
+        width: 155px;
+        height: 25px;
         margin: 0 auto;
         position: relative;
-        top: -37px;
+        top: -20px;
         z-index: -1;
+
+        @media (min-width: 769px) {
+          width: 335px;
+          height: 50px;
+          top: -50px;
+        }
       }
     }
 

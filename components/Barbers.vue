@@ -11,34 +11,16 @@
 
       <div class="allBarbers">
         <div class="allBarbers__item">
-          <img src="@/assets/img/logo-preto.png" alt="barbeiro" />
-          <p class="name">Lorem, <span>20 anos</span></p>
-          <p class="text">
-            It was popularised in the 1960s with the release of Letraset sheets
-            containing Lorem Ipsum passages, and more recently with desktop
-            publishing software like Aldus PageMaker including versions of Lorem
-            Ipsum.
-          </p>
+          <img src="@/assets/img/barber1.jpg" alt="barbeiro" />
+          <p class="name">Nome <span>(Apelido)</span></p>
         </div>
         <div class="allBarbers__item">
-          <img src="@/assets/img/logo-preto.png" alt="barbeiro" />
-          <p class="name">Lorem, <span>20 anos</span></p>
-          <p class="text">
-            It was popularised in the 1960s with the release of Letraset sheets
-            containing Lorem Ipsum passages, and more recently with desktop
-            publishing software like Aldus PageMaker including versions of Lorem
-            Ipsum.
-          </p>
+          <img src="@/assets/img/barber2.jpg" alt="barbeiro" />
+          <p class="name">Nome <span>(Apelido)</span></p>
         </div>
         <div class="allBarbers__item">
-          <img src="@/assets/img/logo-preto.png" alt="barbeiro" />
-          <p class="name">Lorem, <span>20 anos</span></p>
-          <p class="text">
-            It was popularised in the 1960s with the release of Letraset sheets
-            containing Lorem Ipsum passages, and more recently with desktop
-            publishing software like Aldus PageMaker including versions of Lorem
-            Ipsum.
-          </p>
+          <img src="@/assets/img/barber3.jpg" alt="barbeiro" />
+          <p class="name">Nome <span>(Apelido)</span></p>
         </div>
       </div>
     </div>
@@ -68,7 +50,7 @@
         padding-bottom: 10px;
 
         @media (min-width: 800px) {
-          font: 700 4rem "Mate SC", serif;
+          font: 700 5.3rem "Mate SC", serif;
         }
       }
 
@@ -80,9 +62,13 @@
     }
 
     .allBarbers {
-      margin-top: 50px;
+      margin-top: 30px;
       display: flex;
       flex-wrap: wrap;
+
+      @media (min-width: 800px) {
+        margin-top: 50px;
+      }
 
       &__item {
         background-color: var(--white);
@@ -116,9 +102,9 @@
           }
         }
 
-        .text {
-          font-family: "Montserrat", sans-serif;
-          color: var(--black-200);
+        img {
+          max-width: 100%;
+          height: auto;
         }
       }
     }

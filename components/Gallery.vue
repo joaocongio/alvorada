@@ -6,42 +6,42 @@
       <div class="images">
         <div class="images__item">
           <img
-            src="@/assets/img/servicos.png"
+            src="@/assets/img/galeria1-min.jpg"
             alt="Imagem"
             @click="abrirImagem"
           />
         </div>
         <div class="images__item">
           <img
-            src="@/assets/img/servicos.png"
+            src="@/assets/img/galeria2-min.jpg"
             alt="Imagem"
             @click="abrirImagem"
           />
         </div>
         <div class="images__item">
           <img
-            src="@/assets/img/servicos.png"
+            src="@/assets/img/galeria3-min.jpg"
             alt="Imagem"
             @click="abrirImagem"
           />
         </div>
         <div class="images__item">
           <img
-            src="@/assets/img/servicos.png"
+            src="@/assets/img/galeria4-min.jpg"
             alt="Imagem"
             @click="abrirImagem"
           />
         </div>
         <div class="images__item">
           <img
-            src="@/assets/img/servicos.png"
+            src="@/assets/img/galeria5-min.jpg"
             alt="Imagem"
             @click="abrirImagem"
           />
         </div>
         <div class="images__item">
           <img
-            src="@/assets/img/servicos.png"
+            src="@/assets/img/galeria6-min.jpg"
             alt="Imagem"
             @click="abrirImagem"
           />
@@ -91,7 +91,7 @@ export default {
   margin-top: 80px;
 
   @media (min-width: 800px) {
-    margin-top: 160px;
+    margin-top: 140px;
   }
   .container {
     max-width: 95%;
@@ -105,10 +105,10 @@ export default {
       text-align: center;
       font: 700 2rem "Mate SC", serif;
       letter-spacing: 3px;
-      color: var(--black-200);
+      color: var(--secondary);
 
       @media (min-width: 800px) {
-        font: 700 4rem "Mate SC", serif;
+        font: 700 5.3rem "Mate SC", serif;
       }
     }
 
